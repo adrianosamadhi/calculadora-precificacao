@@ -1,8 +1,9 @@
-const CACHE_NAME = 'calc-v1';
+const CACHE_NAME = 'calc-adriano-v3';
 const assets = ['./', './index.html', './manifest.json'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(assets)));
+  self.skipWaiting();
 });
 
 self.addEventListener('fetch', (e) => {
