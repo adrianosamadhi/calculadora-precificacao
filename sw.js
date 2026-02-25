@@ -1,4 +1,4 @@
-const CACHE_NAME = 'calc-adriano-v3';
+const CACHE_NAME = 'calc-adriano-v1';
 const assets = ['./', './index.html', './manifest.json'];
 
 self.addEventListener('install', (e) => {
